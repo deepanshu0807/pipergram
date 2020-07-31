@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "377544078767",
+    "firebase_url": "https://pipergram-3380d.firebaseio.com",
+    "project_id": "pipergram-3380d",
+    "storage_bucket": "pipergram-3380d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377544078767:android:1a2b339913a9480293eb5a",
+        "android_client_info": {
+          "package_name": "com.deepanshu.pipergram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377544078767-tdolf0uo0k21ubdn6ep2d7vt9bm9nvfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deepanshu.pipergram",
+            "certificate_hash": "696054c78c56a86d84418475e6dc636616236153"
+          }
+        },
+        {
+          "client_id": "377544078767-fma7u1e6hkg6al4g1vptchvnajmokj46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs06-7tGuDWIvg3Y557WM7T8c1u1uCQVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377544078767-7t3t83sh916f93bsts3kjr6nucslo9pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        maven { url 'https://dl.bintray.com/android/android-tools' }
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        // Example existing classpath
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        // Add the google services classpath
+        classpath 'com.google.gms:google-services:4.3.0'
+
+        
+
+          //implementation "androidx.annotation:annotation:1.1.0"
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://maven.google.com" // Google's Maven repository
+        }
+    }
+}
+
+
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'androidx.core' &&
+                    !details.requested.name.contains('androidx')) {
+                details.useVersion "1.0.1"
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
